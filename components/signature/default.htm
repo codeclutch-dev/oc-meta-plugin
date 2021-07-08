@@ -1,0 +1,14 @@
+<a href="{{ cc_author_link }}" rel="noopener" target="_blank">
+    <div class="signature">
+        {% if cc_author_logo %}
+        <div class="signature__logo">
+            <img src="{{ cc_author_logo.thumb(auto, 100) }}" alt="website author logo">
+        </div>
+        {% endif %}
+        <div class="signature__text">
+            {{ cc_signature_text }} {{ cc_author }} {{ cc_realisation_year }}
+        </div>
+    </div>
+</a>
+
+

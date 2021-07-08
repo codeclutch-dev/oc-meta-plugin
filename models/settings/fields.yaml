@@ -1,0 +1,81 @@
+tabs:
+    fields:
+        icon:
+            label: 'codeclutch.meta::lang.plugin.model.icon'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'codeclutch.meta::lang.plugin.model.information'
+        logo:
+            label: 'codeclutch.meta::lang.plugin.model.logo'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'codeclutch.meta::lang.plugin.model.information'
+        title:
+            label: 'codeclutch.meta::lang.plugin.model.title'
+            span: auto
+            type: text
+            tab: 'codeclutch.meta::lang.plugin.model.information'
+        copyright:
+            label: 'codeclutch.meta::lang.plugin.model.copyright'
+            span: auto
+            type: text
+            tab: 'codeclutch.meta::lang.plugin.model.information'
+        keywords:
+            label: 'codeclutch.meta::lang.plugin.model.keywords'
+            span: auto
+            placeholder: 'codeclutch.meta::lang.plugin.model.keywords_placeholder'
+            type: text
+            tab: 'codeclutch.meta::lang.plugin.model.meta'
+        color:
+            label: 'codeclutch.meta::lang.plugin.model.color'
+            span: auto
+            type: colorpicker
+            tab: 'codeclutch.meta::lang.plugin.model.meta'
+        og_image:
+            label: 'codeclutch.meta::lang.plugin.model.og_image'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'codeclutch.meta::lang.plugin.model.og'
+        author:
+            label: 'codeclutch.meta::lang.plugin.model.author'
+            span: auto
+            disabled: 0
+            type: text
+            tab: 'codeclutch.meta::lang.plugin.model.author'
+        author_link:
+            label: 'codeclutch.meta::lang.plugin.model.link'
+            span: auto
+            disabled: 0
+            type: text
+            tab: 'codeclutch.meta::lang.plugin.model.author'
+        author_logo:
+            label: 'codeclutch.meta::lang.plugin.model.author_logo'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            disabled: 0
+            type: fileupload
+            tab: 'codeclutch.meta::lang.plugin.model.author'
+        realisation_year:
+            label: 'codeclutch.meta::lang.plugin.model.realisation_year'
+            span: auto
+            type: number
+            tab: 'codeclutch.meta::lang.plugin.model.author'

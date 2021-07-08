@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<title>{{ this.page.meta_title }}</title>
+<meta name="description" content="{{ this.page.meta_description }}">
+<meta name="title" content="{{ this.page.meta_title }}">
+<meta name="author" content="{{ head.meta.author }}">
+<meta name="keywords" content="{{ head.meta.keywords }}" />
+<meta name="theme-color" content="{{ head.meta.color }}">
+<meta name="copyright" content="{{ head.meta.copyright }}" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="{{ head.meta.icon.thumb(200, auto) }}">
+
+<link rel="shortcut icon" href="{{ head.meta.icon.thumb(50, auto) }}">
+<link rel="apple-touch-icon-precomposed" href="{{ head.meta.icon.thumb(200, auto) }}">
+<link rel="apple-touch-icon-precomposed" sizes="57×57″ href=" apple-touch-icon-iphone.png"="{{ head.meta.icon.thumb(57, 57) }}">
+<link rel="apple-touch-icon-precomposed" sizes="72×72″ href=" apple-touch-icon-ipad.png"="{{ head.meta.icon.thumb(72, 72) }}">
+<link rel="apple-touch-icon-precomposed" sizes="114×114″ href=" apple-touch-icon-iphone-retina-display.png"="{{ head.meta.icon.thumb(114, 114) }}">
+<link rel="apple-touch-icon-precomposed" href="{{ head.meta.icon.thumb(152,152) }}">
+
+<meta property="og:title" content="{{ this.page.meta_title }}">
+<meta property="og:description" content="{{ this.page.meta_description }}">
+<meta property="og:image" content="{{ head.meta.og_image }}">
+<meta property="og:url" content="{{ this.page.url }}">
+<meta property="og:site_name" content="{{ head.meta.title }}">
+
+<meta name="twitter:title" content="{{ this.page.meta_title }} ">
+<meta name="twitter:description" content="{{ this.page.meta_description }}">
+<meta name="twitter:image" content="{{ head.meta.og_image }}">
+<meta name="twitter:card" content="{{ head.meta.og_image }}">

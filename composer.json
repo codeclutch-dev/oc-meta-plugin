@@ -1,0 +1,28 @@
+{
+    "name": "codeclutch/oc-meta-plugin",
+    "description": "Plugin providing meta information about website for October CMS",
+    "homepage": "https://codeclutch.pl",
+    "type": "october-plugin",
+    "keywords": ["october", "octobercms", "meta", "admin"],
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michał Korczak",
+            "email": "michal.korczak@codeclutch.pl",
+            "role": "Co-founder"
+        },
+        {
+            "name": "Michał Górny",
+            "email": "michal.gorny@codeclutch.pl",
+            "role": "Co-founder"
+
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/codeclutch-ltd/oc-meta-plugin/issues",
+        "source": "https://github.com/codeclutch-ltd/oc-meta-plugin"
+    }
+}
