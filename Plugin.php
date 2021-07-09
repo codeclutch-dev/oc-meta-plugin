@@ -10,7 +10,7 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name' => Lang::get('codeclutch.meta::lang.plugin.name'),
+            'name' => 'Meta',
             'description' => Lang::get('codeclutch.meta::lang.plugin.description'),
             'author' => 'codeclutch',
             'icon' => 'icon-home'
