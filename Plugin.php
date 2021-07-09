@@ -20,7 +20,7 @@ class Plugin extends PluginBase
     public function registerSettings()
     {
         return [
-            'meta' => [
+            'config' => [
                 'label' => Lang::get('codeclutch.meta::lang.plugin.name'),
                 'description' => Lang::get('codeclutch.meta::lang.plugin.description'),
                 'category' => 'codeclutch',
