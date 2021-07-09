@@ -24,5 +24,6 @@
     "support": {
         "issues": "https://github.com/codeclutch-ltd/oc-meta-plugin/issues",
         "source": "https://github.com/codeclutch-ltd/oc-meta-plugin"
-    }
+    },
+    "minimum-stability": "dev"
 }
