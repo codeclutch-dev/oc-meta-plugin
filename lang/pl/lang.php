@@ -34,21 +34,21 @@
                     'description' => 'Rozmiar elementu nagłówka w copyright',
                 ],
             ],
+            'head' => [
+                'name' => 'Head',
+                'description' => 'Wypełnia <head>',
+            ],
             'logo' => [
                 'name' => 'Logo',
                 'description' => 'Wyświetla logo',
                 'height' => [
-                    'name' => 'Height',
+                    'name' => 'Wysokość',
                     'description' => 'Wysokość logo',
                 ],
                 'width' => [
-                    'name' => 'Width',
+                    'name' => 'Długość',
                     'description' => 'Długość logo',
                 ],
-            ],
-            'head' => [
-                'name' => 'Head',
-                'description' => 'Wypełnia <head>',
             ],
             'signature' => [
                 'name' => 'Stopka',
