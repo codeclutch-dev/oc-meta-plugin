@@ -42,11 +42,11 @@
                 'name' => 'Logo',
                 'description' => 'Wyświetla logo',
                 'height' => [
-                    'name' => 'Height',
+                    'name' => 'Wysokość',
                     'description' => 'Wysokość logo',
                 ],
                 'width' => [
-                    'name' => 'Width',
+                    'name' => 'Długość',
                     'description' => 'Długość logo',
                 ],
             ],
