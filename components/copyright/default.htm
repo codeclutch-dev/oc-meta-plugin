@@ -1,7 +1,6 @@
-<{{ cc_copyright_header_size }} class="copyright">
-    {% if cc_display_copyright_name %}
-    {{ cc_copyright }}
+<{{ cc_copyright.header_size }} class="copyright">
+    {% if cc_copyright.display_name %}
+        {{ cc_copyright.copyright }}
     {% endif %}
-    © {{ cc_year }}
-</{{ cc_copyright_header_size }}>
-
+    © {{ cc_copyright.year }}
+</{{ cc_copyright.header_size }}>

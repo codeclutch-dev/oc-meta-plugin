@@ -1,12 +1,12 @@
-<a href="{{ cc_author_link }}" rel="noopener" target="_blank">
+<a href="{{ cc_signature.author_link }}" rel="noopener" target="_blank">
     <div class="signature">
-        {% if cc_author_logo %}
+        {% if cc_signature.author_logo %}
         <div class="signature__logo">
-            <img src="{{ cc_author_logo.thumb(auto, 100) }}" alt="website author logo">
+            <img src="{{ cc_signature.author_logo.thumb(auto, 100) }}" alt="website author logo">
         </div>
         {% endif %}
         <div class="signature__text">
-            {{ cc_signature_text }} {{ cc_author }} {{ cc_realisation_year }}
+            {{ cc_signature.signature_text }} {{ cc_signature.author }} {{ cc_signature.realisation_year }}
         </div>
     </div>
 </a>

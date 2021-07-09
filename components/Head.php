@@ -1,6 +1,5 @@
 <?php namespace Codeclutch\Meta\Components;
 
-use Lang;
 use Codeclutch\Meta\Models\Settings;
 
 class Head extends \Cms\Classes\ComponentBase
@@ -8,22 +7,24 @@ class Head extends \Cms\Classes\ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => Lang::get('codeclutch.meta::lang.plugin.components.head.name'),
-            'description' => Lang::get('codeclutch.meta::lang.plugin.components.head.description')
+            'name' => 'codeclutch.meta::lang.components.head.name',
+            'description' => 'codeclutch.meta::lang.components.head.description'
         ];
     }
 
-    public function meta()
+    public function onRun()
     {
-        return [
+        $this->page['cc_head'] = [
             'author' => Settings::instance()->author,
-            'color' => Settings::instance()->color,
+            'theme_color' => Settings::instance()->theme_color,
             'copyright' => Settings::instance()->copyright,
             'icon' => Settings::instance()->icon,
             'keywords' => Settings::instance()->keywords,
             'logo' => Settings::instance()->logo,
             'og_image' => Settings::instance()->og_image,
-            'title' => Settings::instance()->title
+            'og_image_width' => Settings::instance()->og_image_width,
+            'og_image_height' => Settings::instance()->og_image_height,
+            'page_title' => Settings::instance()->page_title
         ];
     }
 

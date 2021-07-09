@@ -1,8 +1,6 @@
 <?php namespace Codeclutch\Meta;
 
-use Backend;
 use System\Classes\PluginBase;
-use Lang;
 
 
 class Plugin extends PluginBase
@@ -10,8 +8,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name' => 'Meta',
-            'description' => Lang::get('codeclutch.meta::lang.plugin.description'),
+            'name' => 'codeclutch.meta::lang.plugin.name',
+            'description' => 'codeclutch.meta::lang.plugin.description',
             'author' => 'codeclutch',
             'icon' => 'icon-home'
         ];
@@ -21,8 +19,8 @@ class Plugin extends PluginBase
     {
         return [
             'config' => [
-                'label' => Lang::get('codeclutch.meta::lang.plugin.name'),
-                'description' => Lang::get('codeclutch.meta::lang.plugin.description'),
+                'label' => 'codeclutch.meta::lang.plugin.name',
+                'description' => 'codeclutch.meta::lang.plugin.description',
                 'category' => 'codeclutch',
                 'icon' => 'icon-home',
                 'order' => 1,

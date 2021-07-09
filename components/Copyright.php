@@ -1,6 +1,5 @@
 <?php namespace Codeclutch\Meta\Components;
 
-use Lang;
 use Codeclutch\Meta\Models\Settings;
 
 class Copyright extends \Cms\Classes\ComponentBase
@@ -8,8 +7,8 @@ class Copyright extends \Cms\Classes\ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => Lang::get('codeclutch.meta::lang.plugin.components.copyright.name'),
-            'description' => Lang::get('codeclutch.meta::lang.plugin.components.copyright.description')
+            'name' => 'codeclutch.meta::lang.components.copyright.name',
+            'description' => 'codeclutch.meta::lang.components.copyright.description'
         ];
     }
 
@@ -17,14 +16,14 @@ class Copyright extends \Cms\Classes\ComponentBase
     {
         return [
             'display_name' => [
-                'title' => Lang::get('codeclutch.meta::lang.plugin.components.copyright.display_name.name'),
-                'description' => Lang::get('codeclutch.meta::lang.plugin.components.copyright.display_name.description'),
+                'title' => 'codeclutch.meta::lang.components.copyright.display_name.name',
+                'description' => 'codeclutch.meta::lang.components.copyright.display_name.description',
                 'default' => true,
                 'type' => 'checkbox',
             ],
             'header_size' => [
-                'title' => Lang::get('codeclutch.meta::lang.plugin.components.copyright.header_size.name'),
-                'description' => Lang::get('codeclutch.meta::lang.plugin.components.copyright.header_size.description'),
+                'title' => 'codeclutch.meta::lang.components.copyright.header_size.name',
+                'description' => 'codeclutch.meta::lang.components.copyright.header_size.description',
                 'default' => 5,
                 'type' => 'dropdown',
                 'options' => [
@@ -38,9 +37,11 @@ class Copyright extends \Cms\Classes\ComponentBase
 
     public function onRun()
     {
-        $this->page['cc_copyright'] = Settings::instance()->copyright;
-        $this->page['cc_display_copyright_name'] = $this->properties['display_name'];
-        $this->page['cc_copyright_header_size'] = 'h' . ($this->properties['header_size'] + 1);
-        $this->page['cc_year'] = date('Y');
+        $this->page['cc_copyright'] = [
+            'copyright' => Settings::instance()->copyright,
+            'display_name' => $this->properties['display_name'],
+            'header_size' => 'h' . ($this->properties['header_size'] + 1),
+            'year' => date('Y'),
+        ];
     }
 }
