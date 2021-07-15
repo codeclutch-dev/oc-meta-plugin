@@ -32,13 +32,13 @@ php artisan plugin:install codeclutch.meta
 If you want to use Composer instead, run:
 
 ```
-composer require codeclutch/oc-meta-plugin
+composer require codeclutch/meta-plugin
 php artisan october:migrate
 ```
 
 or for Winter CMS:
 ```
-composer require codeclutch/oc-meta-plugin
+composer require codeclutch/meta-plugin
 php artisan winter:up
 ```
 
