@@ -1,11 +1,9 @@
 # October Meta Plugin
 [![Crowdin](https://badges.crowdin.net/oc-meta-plugin/localized.svg)](https://crowdin.com/project/oc-meta-plugin)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
 
-Meta plugin is a base for websites made with October CMS by freelancers. This plugin should be compatible with Winter CMS too because it doesn't use any breaking changes October introduced.
+Meta plugin is a base for websites made with October CMS by freelancers.
 
 With this plugin is possible:
 
@@ -34,12 +32,6 @@ If you want to use Composer instead, run:
 ```
 composer require codeclutch/oc-meta-plugin
 php artisan october:migrate
-```
-
-or for Winter CMS:
-```
-composer require codeclutch/oc-meta-plugin
-php artisan winter:up
 ```
 
 ## Documentation
