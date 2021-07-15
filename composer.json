@@ -1,5 +1,5 @@
 {
-    "name": "codeclutch/meta-plugin",
+    "name": "codeclutch/oc-meta-plugin",
     "description": "Plugin providing meta information about website for October CMS",
     "homepage": "https://codeclutch.pl",
     "type": "october-plugin",
